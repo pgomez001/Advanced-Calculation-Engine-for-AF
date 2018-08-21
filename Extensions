@@ -4,14 +4,19 @@ Decription: Returns AFValues having the same constant value.
 Usage: GetConstantValues(AFTimeRange timeRange, int numberOfValues, object value, AFAttribute attribute = null)
 
 Parameters:
-AFTimeRange timeRange, 
-int numberOfValues, 
-object value, 
+timeRange is an AFTimeRange structure representing the desired time range of interest.
+numberOfValues is an integer that represents the number of points desired to be generated.
+value is an object desired to be constantly generated, i.e. a real number, a string, etc. 
 AFAttribute attribute = null
 
 Return:
 
 Example:
+
+The following code may be input into the code editor of the graphical user interface and calculated to obtain the desired results. 
+Please note that the time range, timeRange, and number of points, n, and are automatically derived and inserted for you based off 
+of the AFTime values reflected in the Start Time, End Time, and No Points fields located on the GUI.
+
 using OSIsoft.AF.Asset;
 using OSIsoft.AF.Time;
 using AACE.Data.Model;
@@ -36,20 +41,25 @@ namespace AFCalculationEngine
 }
 
 
-##### Get Heart Beat Values #########################################################################################
+##### Get Heart Beat Values
 Decription: Returns AFValues with values that represent a simulated heartbeat.
 
 Usage: GetHeartBeatValues(AFTimeRange timeRange, int numberOfValues, int prevValue = 0, AFAttribute attribute = null)
 
 Parameters:
-AFTimeRange timeRange, 
-int numberOfValues, 
+timeRange is an AFTimeRange structure representing the desired time range of interest.
+numberOfValues is an integer that represents the number of points desired to be generated.
 int prevValue = 0, 
 AFAttribute attribute = null
 
 Return:
 
 Example:
+
+The following code may be input into the code editor of the graphical user interface and calculated to obtain the desired results. 
+Please note that the time range, timeRange, and number of points, n, and are automatically derived and inserted for you based off 
+of the AFTime values reflected in the Start Time, End Time, and No Points fields located on the GUI.
+
 using OSIsoft.AF.Asset;
 using OSIsoft.AF.Time;
 using AACE.Data.Model;
@@ -80,13 +90,18 @@ Decription: Returns AFValues with random values between 0 and 1.
 Usage: GetRandomValues(AFTimeRange timeRange, int numberOfValues, AFAttribute attribute = null)
 
 Parameters:
-AFTimeRange timeRange, 
-int numberOfValues, 
+timeRange is an AFTimeRange structure representing the desired time range of interest.
+numberOfValues is an integer that represents the number of points desired to be generated.
 AFAttribute attribute = null
 
 Return:
 
 Example:
+
+The following code may be input into the code editor of the graphical user interface and calculated to obtain the desired results. 
+Please note that the time range, timeRange, and number of points, n, and are automatically derived and inserted for you based off 
+of the AFTime values reflected in the Start Time, End Time, and No Points fields located on the GUI.
+
 using OSIsoft.AF.Asset;
 using OSIsoft.AF.Time;
 using AACE.Data.Model;
@@ -117,15 +132,20 @@ Decription: Returns AFValues with random values generated from a Gaussian distri
 Usage: GetGaussianRandomValues(AFTimeRange timeRange, int numberOfValues, double mean, double stdDev, AFAttribute attribute = null)
 
 Parameters:
-AFTimeRange timeRange, 
-int numberOfValues, 
-double mean, 
-double stdDev, 
+timeRange is an AFTimeRange structure representing the desired time range of interest.
+numberOfValues is an integer that represents the number of points desired to be generated.
+mean is a real number representing the mean of the Gaussian distribution.
+stdDev is a real number representing the standard deviation of the Gaussian distribution. 
 AFAttribute attribute = null
 
 Return:
 
 Example:
+
+The following code may be input into the code editor of the graphical user interface and calculated to obtain the desired results. 
+Please note that the time range, timeRange, and number of points, n, and are automatically derived and inserted for you based off 
+of the AFTime values reflected in the Start Time, End Time, and No Points fields located on the GUI.
+
 using OSIsoft.AF.Asset;
 using OSIsoft.AF.Time;
 using AACE.Data.Model;
@@ -156,16 +176,21 @@ Decription: Returns AFValues with values generated from a sine wave.
 Usage: GetSinusoidValues(AFTimeRange timeRange, int numberOfValues, double height, double signalPerDay, TimeSpan shift, AFAttribute attribute = null)
 
 Parameters:
-AFTimeRange timeRange, 
-int numberOfValues, 
-double height, 
-double signalPerDay, 
-TimeSpan shift, 
+timeRange is an AFTimeRange structure representing the desired time range of interest.
+numberOfValues is an integer that represents the number of points desired to be generated.
+height is a real number representing the height of the rectangular wave.
+signalPerDay is a real number that represents the number of signals (or periods) desired per day. 
+shift is a TimeSpan structure that represents a time interval to horizontally shift the sine wave by.
 AFAttribute attribute = null
 
 Return:
 
 Example:
+
+The following code may be input into the code editor of the graphical user interface and calculated to obtain the desired results. 
+Please note that the time range, timeRange, and number of points, n, and are automatically derived and inserted for you based off 
+of the AFTime values reflected in the Start Time, End Time, and No Points fields located on the GUI.
+
 using OSIsoft.AF.Asset;
 using OSIsoft.AF.Time;
 using AACE.Data.Model;
@@ -197,16 +222,21 @@ Decription: Returns AFValues with values generated from a seesaw (or sawtooth) w
 Usage: GetSeesawValues(AFTimeRange timeRange, int numberOfValues, double height, double signalPerDay, TimeSpan shift, AFAttribute attribute = null)
 
 Parameters:
-AFTimeRange timeRange, 
-int numberOfValues, 
-double height, 
-double signalPerDay, 
-TimeSpan shift, 
+timeRange is an AFTimeRange structure representing the desired time range of interest.
+numberOfValues is an integer that represents the number of points desired to be generated.
+height is a real number that represents the desired maximum of the seesaw wave that the values will be generated from.
+signalPerDay is a real number that represents the number of signals (or periods) desired per day. 
+shift is a TimeSpan structure that represents a time interval to horizontally shift the seesaw wave by.
 AFAttribute attribute = null
 
 Return:
 
 Example:
+
+The following code may be input into the code editor of the graphical user interface and calculated to obtain the desired results. 
+Please note that the time range, timeRange, and number of points, n, and are automatically derived and inserted for you based off 
+of the AFTime values reflected in the Start Time, End Time, and No Points fields located on the GUI.
+
 using OSIsoft.AF.Asset;
 using OSIsoft.AF.Time;
 using AACE.Data.Model;
@@ -237,17 +267,22 @@ Decription: Returns AFValues with values generated from a rectangular wave.
 Usage: GetRectangularValues(AFTimeRange timeRange, int numberOfValues, TimeSpan zeroSpan, TimeSpan oneSpan, double height, TimeSpan shift, AFAttribute attribute = null)
 
 Parameters:
-AFTimeRange timeRange, 
-int numberOfValues, 
-TimeSpan zeroSpan, 
-TimeSpan oneSpan, 
-double height, 
-TimeSpan shift, 
+timeRange is an AFTimeRange structure representing the desired time range of interest.
+numberOfValues is an integer that represents the number of points desired to be generated.
+zeroSpan is a TimeSpan structure that represents the time interval in which the recatangular wave is zero.
+oneSpan is a TimeSpan structure that represents the time interval in which the recatangular wave is not zero.
+height is a real number that represents the desired maximum of the rectangula wave that the values will be generated from.
+shift is a TimeSpan structure that represents a time interval to horizontally shift the seesaw wave by.
 AFAttribute attribute = null
 
 Return:
 
 Example:
+
+The following code may be input into the code editor of the graphical user interface and calculated to obtain the desired results. 
+Please note that the time range, timeRange, and number of points, n, and are automatically derived and inserted for you based off 
+of the AFTime values reflected in the Start Time, End Time, and No Points fields located on the GUI.
+
 using OSIsoft.AF.Asset;
 using OSIsoft.AF.Time;
 using AACE.Data.Model;
@@ -290,16 +325,21 @@ Decription: Returns AFValues with values generated from a random walk model.
 Usage: GetRandomWalkValues(AFTimeRange timeRange, int numberOfValues, double previousValue, double lowerLimit=0, double upperLimit = 100, AFAttribute attribute = null)
 
 Parameters:
-AFTimeRange timeRange, 
-int numberOfValues, 
-double previousValue, 
-double lowerLimit=0, 
+timeRange is an AFTimeRange structure representing the desired time range of interest.
+numberOfValues is an integer that represents the number of points desired to be generated.
+previousValue is a real number that represents
+double lowerLimit= 0, 
 double upperLimit = 100, 
 AFAttribute attribute = null
 
 Return:
 
 Example:
+
+The following code may be input into the code editor of the graphical user interface and calculated to obtain the desired results. 
+Please note that the time range, timeRange, and number of points, n, and are automatically derived and inserted for you based off 
+of the AFTime values reflected in the Start Time, End Time, and No Points fields located on the GUI.
+
 using OSIsoft.AF.Asset;
 using OSIsoft.AF.Time;
 using AACE.Data.Model;
